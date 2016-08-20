@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -24,6 +25,7 @@ namespace Eshopy.Models
             this.Title = Title;
         }
 
+        [Key]
         public virtual int ProductId { get; set; }
         public virtual string Sponsor { get; set; }
         public virtual string Title { get; set; }

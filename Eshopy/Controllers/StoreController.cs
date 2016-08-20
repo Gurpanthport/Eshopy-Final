@@ -42,7 +42,7 @@ namespace Eshopy.Controllers
         }
 
         //
-        // GET: /Store/GenreMenu
+        // GET: /Store/ProductMenu
         [ChildActionOnly]
         public ActionResult ProductMenu()
         {

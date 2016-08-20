@@ -1,22 +1,22 @@
-﻿@using COMP2007_S2016_Lesson12C.Models
-@model Genre
+﻿@using Eshopy.Models
+@model Products
 
 @{
-    ViewBag.Title = "Browse Albums";
+    ViewBag.Title = "Browse Our Products";
 }
 
-<div class="genre">
-    <h3><em>@Model.Name</em> Albums</h3>
+<div class="product">
+    <h3><em>@Model</em> Products</h3>
 
-    <ul id="album-list">
-        @foreach (var album in Model.Albums)
+    <ul id="product-list">
+        @foreach (var product in Model.Title)
         {
             <li>
                 <a href="@Url.Action("Details",
-                    new { id = album.AlbumId })">
-                    <img alt="@album.Title"
-                         src="@album.AlbumArtUrl" />
-                    <span>@album.Title</span>
+                    new { id = product.ProductId })">
+                    <img alt="@product.Title"
+                         src="@product.AlbumArtUrl" />
+                    <span>@product.Title</span>
                 </a>
             </li>
         }

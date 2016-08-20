@@ -106,7 +106,7 @@ namespace Eshopy.Models
             // Return 0 if all entries are null
             return count ?? 0; 
 
-            return 0;
+            //return 0;
         }
         public decimal GetTotal()
         {

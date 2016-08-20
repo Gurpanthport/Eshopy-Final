@@ -1,4 +1,4 @@
-﻿@model COMP2007_S2016_Lesson12C.Models.Album
+﻿@model Eshopy.Models.Products
 
 @{
     ViewBag.Title = "Details";
@@ -7,25 +7,9 @@
 <h2>Details</h2>
 
 <div>
-    <h4>Album</h4>
+    <h4>Products</h4>
     <hr />
     <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Artist.Name)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Artist.Name)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Genre.Name)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Genre.Name)
-        </dd>
-
         <dt>
             @Html.DisplayNameFor(model => model.Title)
         </dt>

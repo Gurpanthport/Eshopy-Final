@@ -1,8 +1,8 @@
-﻿@using COMP2007_S2016_Lesson12C.Models
-@model Album
+﻿@using Eshopy.Models
+@model Products
 
 @{
-    ViewBag.Title = "Album - " + Model.Title;
+    ViewBag.Title = "Product - " + Model.Title;
 }
 <h2>@Model.Title</h2>
 <p>
@@ -11,12 +11,12 @@
 </p>
 <div id="album-details">
     <p>
-        <em>Genre:</em>
-        @Model.Genre.Name
+        <em>Product:</em>
+        @Model.Sponsor
     </p>
     <p>
-        <em>Artist:</em>
-        @Model.Artist.Name
+        <em>Title:</em>
+        @Model.Title
     </p>
     <p>
         <em>Price:</em>
@@ -25,7 +25,7 @@ Model.Price)
     </p>
     <p class="button">
         @Html.ActionLink("Add to cart", "AddToCart",
-        "ShoppingCart", new { id = Model.AlbumId }, "")
+        "ShoppingCart", new { id = Model.ProductId }, "")
     </p>
 </div>
 
