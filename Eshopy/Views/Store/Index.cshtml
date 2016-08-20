@@ -1,0 +1,20 @@
+﻿@using Eshopy.Models
+@model IEnumerable<Products>
+
+@{
+    ViewBag.Title = "Index";
+
+}
+
+<h3>Browse Our Products</h3>
+<p>
+    Select from @Model.Count()
+    Products:
+</p>
+<ul>
+    @foreach (Products item in Model)
+    {
+        <li>@Html.ActionLink(item.Title,"Browse", new {product=item.Title })</li>
+    }
+</ul>
+
